@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</header>
+
+<main id="main-content">
+    <!-- Dynamic Content Will Be Injected Here -->
+    <section id="landing-view" class="view active">
+        <div class="hero-content">
+            <h1>Identify Your Injury & <br>Get Back in the Game.</h1>
+            <p>Answer a few questions to get a preliminary assessment of your sports injury.</p>
+            <button id="start-btn" class="btn-primary">Start Assessment</button>
+            <div class="landing-disclaimer">
+                <p><strong>⚠️ Important:</strong> This tool is for informational purposes only and does not
+                    provide medical advice. Always consult a doctor for a proper diagnosis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="question-view" class="view hidden">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <div class="question-container">
+            <h2 id="question-text">Question goes here?</h2>
+            <div id="options-container" class="options-grid">
+                <!-- Options injected via JS -->
+            </div>
+        </div>
+        <div class="controls">
+            <button id="back-btn" class="btn-secondary hidden">Back</button>
+        </div>
+    </section>
+
+    <section id="result-view" class="view hidden">
+        <div class="result-card">
+            <div class="result-header">
+                <span class="match-label">Potential Match</span>
+                <h2 id="injury-name">Injury Name</h2>
+            </div>
+            <div class="result-body">
+                <p id="injury-description">Description of the injury...</p>
+
+                <div class="recommendations">
+                    <h3>Recommended Actions</h3>
+                    <ul id="recommendation-list">
+                        <li>Rest and Ice</li>
+                    </ul>
+                </div>
+
+                <div class="disclaimer">
+                    <p><strong>Disclaimer:</strong> This is not a medical diagnosis. Please consult a healthcare
+                        professional.</p>
+                </div>
+
+                <button id="restart-btn" class="btn-primary">Start Over</button>
+            </div>
+        </div>
+    </section>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
